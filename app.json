@@ -1,7 +1,18 @@
 {
   "expo": {
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ]
+    ],
     "name": "test-betterware",
     "slug": "test-betterware",
+    "entryPoint": "./App.js",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
